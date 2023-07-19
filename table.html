@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Tables</title>
+    <style>
+        td, th{
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
     <table>
-        <thead></thead>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
         <tbody>
             <tr>
                 <td>1</td>
@@ -37,7 +54,11 @@
                 <td>1300</td>
             </tr>
         </tbody>
-        <tfoot></tfoot>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total Employee: 4</td>
+            </tr>
+        </tfoot>
     </table>
     
 </body>
